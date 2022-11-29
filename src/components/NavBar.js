@@ -18,8 +18,7 @@ export default function NavBar(props) {
   const [allFilters, setAllFilters] = useState(true)
 
   const handleChange = (event) => {
-    console.log('event', event)
-    console.log('event.target.value', event.target.value)
+
    props.selectSortStyle(event.target.value);
   };
 
@@ -30,97 +29,51 @@ export default function NavBar(props) {
     }
   }
 
-  // //sets the state to the selected type, function passed to the onSelect event handler of HTML buttons
-  // function updateFilters (typetype) {
-
-  //   const oldFilters = props.filters
-  //   var found = new Boolean(false)
-    
-  //   console.log('oldFilters', oldFilters)
-  //   for (let i = 0; i < oldFilters.length; i++){
-  //     if (oldFilters[i]==typetype) {
-  //       console.log('found')
-  //       found = true
-  //       oldFilters.splice(i,1)
-  //       console.log(oldFilters)
-  //       props.updateFilters(oldFilters)
-  //     }
-  //   }
-
-  //   if (found == false){
-  //     oldFilters.push(typetype)
-  //     console.log(oldFilters)
-  //     props.updateFilters(oldFilters)
-  //   }
-
-  //   if(oldFilters.length === 0){
-  //     console.log("NO FILTERS")
-  //     setAllFilters(true)}
-  //   else{
-  //     console.log("FILTERS")
-  //     setAllFilters(false);
-  //   }
-        
-  // }
 
   function updateDiet (newDiet) {
     const oldFilters = props.filters.diet
     const oldLegFilters =props.filters.legs
-     console.log('updating Diet! old diet: ', oldFilters)
-     console.log('updating Diet! old legs: ', oldLegFilters)
+   
     var found = new Boolean(false)
-  
-    console.log('oldFilters', oldFilters)
-
     
     for (let i = 0; i < oldFilters.length; i++){
       if (oldFilters[i]==newDiet) {
-        console.log('found')
+
         found = true
         oldFilters.splice(i,1)
-        console.log("updating to", oldFilters)
+
         props.updateFilters({diet: oldFilters, legs:oldLegFilters})
       }
     }
 
     if (found == false){
       oldFilters.push(newDiet)
-      console.log(oldFilters)
       props.updateFilters({diet: oldFilters, legs:oldLegFilters})
     }
 
     if(oldFilters.length === 0){
-      console.log("NO FILTERS")
       setAllFilters(true)}
     else{
-      console.log("FILTERS")
       setAllFilters(false);
     }
-    console.log('updating Diet! new legs: ', props.filters.legs)
+   
   }
 
   function updateLegs (newLegs) {
     const oldFilters = props.filters.legs
     const oldDietFilters =props.filters.diet
-     console.log('updating Legs! old diet: ', oldDietFilters)
-     console.log('updating Legs! old legs: ', oldFilters)
     var found = new Boolean(false)
-  
-    console.log('oldFilters', oldFilters)
-    
+
     for (let i = 0; i < oldFilters.length; i++){
       if (oldFilters[i]==newLegs) {
-        console.log('found')
         found = true
         oldFilters.splice(i,1)
-        console.log("updating to", oldFilters)
         props.updateFilters({diet: oldDietFilters, legs:oldFilters})
       }
     }
 
     if (found == false){
       oldFilters.push(newLegs)
-      console.log("NEW LEGS NOW FILTERS ARE " , oldFilters)
       props.updateFilters({diet: oldDietFilters, legs:oldFilters})
     }
 
@@ -137,8 +90,13 @@ export default function NavBar(props) {
 
   return (
     <div>
-      <div style={{}} >
+      
 
+
+
+    <div style={{"display": "flex", "align-items":"flex-start", "flex-direction": "column", "justify-content": "space-around", "margin":"20%", "width":"max-content"}}>
+    
+    <div style={{"margin-bottom":"20px"}} >
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-label">Sort</InputLabel>
           <Select
@@ -155,73 +113,80 @@ export default function NavBar(props) {
       </div>
 
 
-
-
-
-
-    <div>
-      {/* <FormControlLabel control={
+      <div>
+      <h5 style={{"margin-bottom": "-2px"}}>Filter by Diet</h5>
+      <div style={{"display":"flex", "flex-direction":"column"}}>
+        {/* <FormControlLabel control={
+            <Checkbox 
+                checked={allFilters}
+                onChange={(event) =>
+                  
+                    resetFilters()
+                  
+                }
+                />
+          } label="All" /> */}
+        <FormControlLabel 
+        control={
+            <Checkbox 
+                onChange={(event) =>
+                  updateDiet("Carnivore")
+                }
+                />
+          } label="Carnivore" />
+        <FormControlLabel style={{"margin-top": "-10px"}}
+        control={
+            <Checkbox 
+                onChange={(event) =>
+                  updateDiet("Omnivore")
+                }
+                />
+          } label="Omnivore" />
+        <FormControlLabel style={{"margin-top": "-10px"}}
+        control={
           <Checkbox 
-              checked={allFilters}
               onChange={(event) =>
-                
-                  resetFilters()
-                
+                updateDiet("Herbivore")
               }
               />
-        } label="All" /> */}
-      <FormControlLabel control={
-          <Checkbox 
-              onChange={(event) =>
-                updateDiet("Carnivore")
-              }
-              />
-        } label="Carnivore" />
-      <FormControlLabel control={
-          <Checkbox 
-              onChange={(event) =>
-                updateDiet("Omnivore")
-              }
-              />
-        } label="Omnivore" />
-      <FormControlLabel control={
-        <Checkbox 
-            onChange={(event) =>
-              updateDiet("Herbivore")
-            }
-            />
-      } label="Herbivore" />
+        } label="Herbivore" />
+          
         
-      
-    </div>
+      </div>
+      </div>
 
-    <div>
-     
-      <FormControlLabel control={
+      <div style={{"margin-top": "30px"}}>
+        <h5 style={{"margin-bottom": "-2px"}}>Filter by Leg Count</h5>
+        <div style={{"display":"flex", "flex-direction":"column"}}>
+      
+        <FormControlLabel
+        control={
+            <Checkbox 
+                onChange={(event) =>
+                  updateLegs(2)
+                }
+                />
+          } label="Two Legs" />
+        <FormControlLabel style={{"margin-top": "-10px"}}
+        control={
+            <Checkbox 
+                onChange={(event) =>
+                  updateLegs(4)
+                }
+                />
+          } label="Four Legs" />
+        <FormControlLabel style={{"margin-top": "-10px"}}
+        control={
           <Checkbox 
               onChange={(event) =>
-                updateLegs(2)
+                updateLegs(8)
               }
               />
-        } label="Two Legs" />
-      <FormControlLabel control={
-          <Checkbox 
-              onChange={(event) =>
-                updateLegs(4)
-              }
-              />
-        } label="Four Legs" />
-      <FormControlLabel control={
-        <Checkbox 
-            onChange={(event) =>
-              updateLegs(8)
-            }
-            />
-      } label="More Legs" />
-        
-      
-    </div>
-
+        } label="More Legs" />
+          
+          </div>
+      </div>
+        </div> 
         
   </div>
   )

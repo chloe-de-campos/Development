@@ -7,11 +7,9 @@ import { useState } from "react";
 
 export default function Cart(props) {
     function buildCart() {
-    // consolidateArray(cartItems)
-    console.log('_________BUILDIHGCART')
+   
     return (props.cartItems.map((item, index) =>
         <div class="cartItem" >
-            {console.log('image', item.product.image)}
             {/* <div className="cartImage"> */}
                 <img className="cartImage" src={item.product.image} />
             {/* </div>  */}

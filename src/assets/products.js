@@ -24,7 +24,7 @@ const products =
     },
     {
     "name": "Buffalo",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Stampy-stompy, strong and fluffy",
     "price": 1230.49,
     "diet": "Herbivore",
     "legs": "4",
@@ -33,7 +33,7 @@ const products =
     },
     {
     "name": "Chicken",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Crazy, stupid, loveable",
     "price": 59.99,
     "diet": "Herbivore",
     "legs": "2",
@@ -42,7 +42,7 @@ const products =
     },
     {
     "name": "Duck",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Splishy-splashy, quacky-quacky",
     "price": 35.99,
     "diet": "Herbivore",
     "legs": "2",
@@ -51,7 +51,7 @@ const products =
     },
     {
     "name": "Elephant",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "The best friend you'll ever have, will grieve you long after your death",
     "price": 2355.69,
     "diet": "Herbivore",
     "legs": "4",
@@ -60,7 +60,7 @@ const products =
     },
     {
     "name": "Lemur",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Could compose Hamlet on a typewriter faster than any monkey",
     "price": 345.99,
     "diet": "Vegetarian",
     "legs": "4",
@@ -69,7 +69,7 @@ const products =
     },
     {
     "name": "Leopard",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Big prey-stalker guy. Must be fed live prey or else you will be live prey",
     "price": 670.45,
     "diet": "Carnivore",
     "legs": "4",
@@ -78,7 +78,7 @@ const products =
     },
     {
     "name": "Octapus",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "More legs than you know what to do with",
     "price": 888.89,
     "diet": "Carnivore",
     "legs": "8",
@@ -87,7 +87,7 @@ const products =
     },
     {
     "name": "Polar Bear",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "The last of its kind",
     "price": 2399.99,
     "diet": "Carnivore",
     "legs": "4",
@@ -96,7 +96,7 @@ const products =
     },
     {
     "name": "Raccoon",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "Call him a theif if you want, but he prefers to think of himself as a Robinhood of the dumpster",
     "price": 235.56,
     "diet": "Omnivore",
     "legs": "4",
@@ -105,7 +105,7 @@ const products =
     },
     {
     "name": "Rhino",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "You could fit 3-5 lemurs inside her horn, probably. That's by liquid volume.",
     "price": 1859.99,
     "diet": "Herbivore",
     "legs": "4",
@@ -114,7 +114,7 @@ const products =
     },
     {
     "name": "Zebra",
-    "description": "Occasionally friendly, devestatingly handsome",
+    "description": "The stripes are his everyday outfit. Please stop calling it a costume",
     "price": 899.99,
     "diet": "Herbivore",
     "legs": "4",
