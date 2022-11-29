@@ -41,7 +41,7 @@ transform: translateY(-50%);
 
 .product-desc{
   width: 100%;
-  height: 200px;
+  min-height: 220px;
   display:flex;
   flex-direction: column;
   justify-content: space-around;

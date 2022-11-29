@@ -77,7 +77,7 @@ const products =
     "image": leopard
     },
     {
-    "name": "Octapus",
+    "name": "Octopus",
     "description": "More legs than you know what to do with",
     "price": 888.89,
     "diet": "Carnivore",
@@ -96,7 +96,7 @@ const products =
     },
     {
     "name": "Raccoon",
-    "description": "Call him a theif if you want, but he prefers to think of himself as a Robinhood of the dumpster",
+    "description": "Call him a thief if you want, but he prefers to think of himself as a Robinhood of the dumpster",
     "price": 235.56,
     "diet": "Omnivore",
     "legs": "4",
