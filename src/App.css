@@ -1,5 +1,5 @@
 .App {
-
+  background-color: #d0ff6a;
 }
 
 .h1{
@@ -17,7 +17,7 @@
   margin: auto;
   display: block;
   align-items: center;
-  background-color: rgb(201, 255, 108);
+  background-color: rgb(255, 255, 255);
   position:relative;
 
 }
