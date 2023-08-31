@@ -8,12 +8,35 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { chainPropTypes } from '@mui/utils';
 import { formLabelClasses } from '@mui/material';
 import { useState } from 'react';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+
 
 import * as React from 'react';
 
 
 
 export default function NavBar(props) {
+
+
+
+  const theme = createTheme({
+    typography: {
+      fontFamily: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(','),
+    },
+  });
+  // theme = responsiveFontSizes(theme);
+
 
   const [allFilters, setAllFilters] = useState(true)
 
@@ -94,15 +117,17 @@ export default function NavBar(props) {
 
 
 
-    <div style={{"display": "flex", "align-items":"flex-start", "flex-direction": "column", "justify-content": "space-around", "margin":"20%", "width":"max-content"}}>
+    <div style={{"display": "flex", "align-items":"flex-start", "flex-direction": "column", "justify-content": "space-around", "width":"max-content"}}>
     
     <div style={{"margin-bottom":"20px"}} >
-        <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+        <FormControl disableTypography sx={{ m: 1, minWidth: 120}} size="small">
           <InputLabel id="demo-simple-select-label">Sort</InputLabel>
-          <Select
+          <Select 
+            disableTypography
             value={props.sortStyle}
             label="Age"
             onChange={handleChange}
+            style = {{ fontSize: "10pt" }}
           >
             <MenuItem value={"alph"}>Alphabetically</MenuItem>
             <MenuItem value={"lth"}>Price: low to high</MenuItem>
@@ -114,7 +139,7 @@ export default function NavBar(props) {
 
 
       <div>
-      <h5 style={{"margin-bottom": "-2px"}}>Filter by Diet</h5>
+      <h6 style={{"margin-bottom": "2px"}}>Filter by Diet</h6>
       <div style={{"display":"flex", "flex-direction":"column"}}>
         {/* <FormControlLabel control={
             <Checkbox 
@@ -126,7 +151,7 @@ export default function NavBar(props) {
                 }
                 />
           } label="All" /> */}
-        <FormControlLabel 
+        <FormControlLabel disableTypography  style={{fontSize: "10pt"}}
         control={
             <Checkbox 
                 onChange={(event) =>
@@ -134,7 +159,7 @@ export default function NavBar(props) {
                 }
                 />
           } label="Carnivore" />
-        <FormControlLabel style={{"margin-top": "-10px"}}
+        <FormControlLabel disableTypography  style={{fontSize: "10pt", "margin-top": "-10px"}}
         control={
             <Checkbox 
                 onChange={(event) =>
@@ -142,7 +167,7 @@ export default function NavBar(props) {
                 }
                 />
           } label="Omnivore" />
-        <FormControlLabel style={{"margin-top": "-10px"}}
+        <FormControlLabel disableTypography  style={{fontSize: "10pt","margin-top": "-10px"}}
         control={
           <Checkbox 
               onChange={(event) =>
@@ -156,10 +181,10 @@ export default function NavBar(props) {
       </div>
 
       <div style={{"margin-top": "30px"}}>
-        <h5 style={{"margin-bottom": "-2px"}}>Filter by Leg Count</h5>
+        <h6 style={{"margin-bottom": "2px"}}>Filter by Leg Count</h6>
         <div style={{"display":"flex", "flex-direction":"column"}}>
       
-        <FormControlLabel
+        <FormControlLabel disableTypography  style={{fontSize: "10pt",}}
         control={
             <Checkbox 
                 onChange={(event) =>
@@ -167,7 +192,7 @@ export default function NavBar(props) {
                 }
                 />
           } label="Two Legs" />
-        <FormControlLabel style={{"margin-top": "-10px"}}
+         <FormControlLabel disableTypography  style={{fontSize: "10pt", "margin-top": "-10px"}}
         control={
             <Checkbox 
                 onChange={(event) =>
@@ -175,7 +200,7 @@ export default function NavBar(props) {
                 }
                 />
           } label="Four Legs" />
-        <FormControlLabel style={{"margin-top": "-10px"}}
+         <FormControlLabel disableTypography  style={{fontSize: "10pt","margin-top": "-10px"}}
         control={
           <Checkbox 
               onChange={(event) =>

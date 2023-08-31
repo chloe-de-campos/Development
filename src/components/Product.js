@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 export default function Product(props) {
 
     function addToCart(item){
+        props.setCartSum(props.cartSum + 1)
         var newCart = []
         const updatedCart = newCart.concat(props.theCartItems)
         updatedCart.push(props)
@@ -20,15 +21,18 @@ export default function Product(props) {
                     <img src={props.product.image} />
                 </div>
                 <div class="product-desc">
-                    <h4 style={{}}> {props.product.name}</h4>
-                    <p style={{width:"100%"}}>{props.product.description}</p>
-                    <p>${props.product.price}</p>
-                    <div> 
-                        <Button variant="contained" onClick={() => addToCart()}>Add to Cart</Button>
+                    {/* <div> */}
+                        <h5 style={{}}> {props.product.name}</h5>
+                        <p style={{width:"100%", fontSize:"12pt"}}>{props.product.description}</p>
+                    {/* </div> */}
+                    
+                    <div > 
+                        <p>${props.product.price}</p>
+                        <Button style={{backgroundColor:"#999933", borderRadius:"0px"}} variant="contained" onClick={() => addToCart()}>Add to Cart</Button>
                     </div> 
                 </div>
             </div> 
-            
+             
 
     )
 }

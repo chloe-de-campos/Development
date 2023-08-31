@@ -8,7 +8,7 @@ import { ConstructionSharp } from "@mui/icons-material";
 export default function FilteredList(props)  {
     const [productList, setProductList] = useState(props.list)
     // const list = props.list 
-
+    
     useEffect(() => {
         setProductList(props.list);
       }, [props.list]);
@@ -43,7 +43,10 @@ export default function FilteredList(props)  {
         // all items should be shown when no filter is selected
         if(props.filters.length == 0) { 
             console.log('nofilters')
+            console.log("AAA", props.cartSumSetter, props.cartSum)
             return  Product({
+                setCartSum: props.cartSumSetter,
+                cartSum: props.cartSum,
                 product: item,
                 name: item.name, 
                 priceTotal: props.priceTotal, 
@@ -89,6 +92,8 @@ export default function FilteredList(props)  {
             if (validDiet && validLegs){
                 console.log('valid! making product out of ', item.name)
                 return  Product({
+                    setCartSum: props.cartSumSetter,
+                    cartSum: props.cartSum,
                     product: item,
                     name: item.name, 
                     priceTotal: props.priceTotal, 

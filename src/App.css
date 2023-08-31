@@ -19,22 +19,28 @@
   align-items: center;
   background-color: rgb(255, 255, 255);
   position:relative;
+  /* border-color: #F23B1F;
+  border-width: 2px;
+  border-style: solid; */
 
 }
 
 .product-image img{
+ 
   object-fit: scale-down;
   max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  max-width: 100%;
 
-    position: relative;
+  min-width: 100px;
+  width: auto;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  position: relative;
 top: 50%;
 transform: translateY(-50%);
 }
@@ -44,7 +50,7 @@ transform: translateY(-50%);
   min-height: 220px;
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   /* background-color: aquamarine; */
 }
@@ -58,7 +64,7 @@ transform: translateY(-50%);
   justify-content: left;
   text-align: left;
   min-width: 200px;
-  width: 20vmax;
+  width:  100%;
   height: 150%;
   border-color: rgb(60, 174, 255);
   /* border-color: #2468b0; */
@@ -68,9 +74,10 @@ transform: translateY(-50%);
 }
 
 .mainApp {
-  display: flex; 
-  flex-direction: row 
-
+  display: grid; 
+  flex-direction: row ;
+  grid-template-columns: 20% 80%;
+  margin: 0 10%;
 }
 
 
@@ -89,7 +96,7 @@ transform: translateY(-50%);
 .NavBar {
   /* background-color: aqua; */
   /* height: 10px; */
-  width: 300px;
+  width: 100%
 }
 
 .App-header {
@@ -112,18 +119,16 @@ transform: translateY(-50%);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
+  width: 100%
 }
 
 .Product{
-  padding:30px;
-  margin:15px;
-  width: 30%;
+  padding:10px;
+  margin:20px;
+  width: 25%;
   /* height:  */
   /* border-radius: 1vmin; */
-  border-color: rgb(60, 174, 255);
-  border-width: 2px;
-  border-style: solid;
+ 
   justify-content: left;
   /* background-color:  */
   text-align: left;

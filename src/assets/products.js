@@ -1,15 +1,15 @@
-import baboon from '../images/baboon.jpeg';
-import buffalo from '../images/buffalo.jpeg';
-import chicken from '../images/chicken.jpeg';
-import duck from '../images/duck.jpeg';
-import elephant from '../images/elephant.jpeg';
-import lemur from '../images/lemur.jpeg';
-import leopard from '../images/leopard.jpeg';
-import octapus from '../images/octapus.jpeg';
-import polar_bear from '../images/polar_bear.jpeg';
-import raccoon from '../images/raccoon.jpeg';
-import rhino from '../images/rhino.jpeg';
-import zebra from '../images/zebra.jpeg';
+import baboon from '../images/baboon.jpg';
+import buffalo from '../images/buffalo.jpg';
+import chicken from '../images/chicken.jpg';
+import duck from '../images/duck.jpg';
+import elephant from '../images/elephant.jpg';
+import lemur from '../images/lemur.jpg';
+import leopard from '../images/leopard.jpg';
+import octapus from '../images/octapus.jpg';
+import polar_bear from '../images/polar_bear.jpg';
+import raccoon from '../images/raccoon.jpg';
+import rhino from '../images/rhino.jpg';
+import zebra from '../images/zebra.jpg';
 
 const products = 
 [

@@ -8,9 +8,11 @@ import {useEffect} from 'react'
 import Cart from './components/Cart.js'
 import Button from '@mui/material/Button';
 import zoostack from './assets/antizoostack.svg'
+import ShoppingCartIconSharp from '@mui/icons-material/ShoppingCartSharp';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [cartSum, setCartSum] = useState(0);
   const [priceTotal, setPriceTotal] = useState(0.00);
   const [filters, setFilters] = useState({diet:[], legs:[]});
   const [sortStyle, setSortStyle] = useState('alph');
@@ -21,6 +23,7 @@ function App() {
   }, [filters]);
 
   function removeFromCart(item){ 
+    cartSum = Math.max(cartSum-1, 0)
 
     cartItems.splice( cartItems.indexOf(item), 1)
     return (
@@ -33,7 +36,6 @@ function App() {
       )
     )
   }
-
   
 
   //sets the sort state to the selected type, function passed to the onSelect event handler of HTML buttons
@@ -44,6 +46,7 @@ function App() {
 
   //empties cart
   function clearCart () {
+    setCartSum(0)
     setCartItems([])
     setPriceTotal(0.00)
   }
@@ -55,13 +58,29 @@ function App() {
 
   return (
     <div className="App"> 
+    
+    <div style={{display:'flex',justifyContent: 'flex-end', margin: '30px 30px -30px'}}>
+        <Button sx= {{color:"#999933", borderRadius:"0px"}} style={{}} >
+          
+          <ShoppingCartIconSharp/>
+          {cartSum}
+        </Button>
+      </div>
     <div style={{display:"flex", flexDirection: "row", justifyContent:"center"}}>
+    
       <img style={{width: "10vw"}} src={zoostack} />
-      <h1 style={{"text-align":"center", "margin":"40px","font-weight":"bold", "font-size":"10vw", "color":"Black"}}> BUILDAZOO </h1>
+      <div style={{"margin":"40px"}}>
+        <h1 style={{"text-align":"center", "font-weight":"bold", "font-size":"10vw", "color":"Black"}}> BUILDAZOO </h1>
+      {/* <p style={{marginTop: "-3%"}}><em>Loose wild animals for irresponsible collectors</em></p> */}
+      </div>
+      
+      
     </div>
-
+      
+    
       <div refresh={updateFilteredList()} className = "mainApp">
-      <div onChange={updateFilteredList()} className="NavBar">
+      
+      <div style={{display:"flex", flexDirection: "row", justifyContent:"center"}} onChange={updateFilteredList()} className="NavBar">
           {NavBar({
             filters: filters, 
             updateFilters: setFilters, 
@@ -76,6 +95,8 @@ function App() {
             list: productList,
             priceTotal: priceTotal, 
             setPriceTotal: setPriceTotal, 
+            cartSum: cartSum,
+            cartSumSetter: setCartSum,
             theCartItems: cartItems, 
             cartSetter: setCartItems,
             setFilters: setFilters,
@@ -85,12 +106,12 @@ function App() {
             sortStyle: sortStyle
         })}
 
-        {Cart({
+        {/* {Cart({
           removeFromCart: removeFromCart,
           clearCart: clearCart,
           cartItems: cartItems,
           priceTotal: priceTotal
-          }) }
+          }) } */}
       
       </div>
     </div>
