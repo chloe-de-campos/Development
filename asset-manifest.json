@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Development/static/css/main.68d456e7.css",
-    "main.js": "/Development/static/js/main.132e06f1.js",
+    "main.css": "/Development/static/css/main.95fc0338.css",
+    "main.js": "/Development/static/js/main.dd6dcfee.js",
     "static/media/baboon.jpeg": "/Development/static/media/baboon.71fe8f0489c75b276bc9.jpeg",
     "static/media/buffalo.jpeg": "/Development/static/media/buffalo.21cc202fd0eebb819f93.jpeg",
     "static/media/octapus.jpeg": "/Development/static/media/octapus.82520187de0727a2b62f.jpeg",
@@ -14,13 +14,14 @@
     "static/media/leopard.jpeg": "/Development/static/media/leopard.4e26a52ec768c54bfb00.jpeg",
     "static/media/lemur.jpeg": "/Development/static/media/lemur.b51ce61a71cb78f211fe.jpeg",
     "static/media/chicken.jpeg": "/Development/static/media/chicken.7ac1e631b1dc8088e4be.jpeg",
+    "static/media/antizoostack.svg": "/Development/static/media/antizoostack.8e59aa20db684e7cbb9e4d9015f5b571.svg",
     "static/media/logo.svg": "/Development/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Development/index.html",
-    "main.68d456e7.css.map": "/Development/static/css/main.68d456e7.css.map",
-    "main.132e06f1.js.map": "/Development/static/js/main.132e06f1.js.map"
+    "main.95fc0338.css.map": "/Development/static/css/main.95fc0338.css.map",
+    "main.dd6dcfee.js.map": "/Development/static/js/main.dd6dcfee.js.map"
   },
   "entrypoints": [
-    "static/css/main.68d456e7.css",
-    "static/js/main.132e06f1.js"
+    "static/css/main.95fc0338.css",
+    "static/js/main.dd6dcfee.js"
   ]
 }
