@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import {useEffect} from 'react'
 import Cart from './components/Cart.js'
 import Button from '@mui/material/Button';
+import zoostack from './assets/antizoostack.svg'
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -54,8 +55,10 @@ function App() {
 
   return (
     <div className="App"> 
-      <h1 style={{"text-align":"center", "margin":"40px","font-weight":"bold", "font-size":"100pt", "color":"#2468b0"}}> BUILD A ZOO </h1>
-      
+    <div style={{display:"flex", flexDirection: "row", justifyContent:"center"}}>
+      <img style={{width: "10vw"}} src={zoostack} />
+      <h1 style={{"text-align":"center", "margin":"40px","font-weight":"bold", "font-size":"10vw", "color":"Black"}}> BUILDAZOO </h1>
+    </div>
 
       <div refresh={updateFilteredList()} className = "mainApp">
       <div onChange={updateFilteredList()} className="NavBar">

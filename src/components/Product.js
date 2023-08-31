@@ -20,7 +20,7 @@ export default function Product(props) {
                     <img src={props.product.image} />
                 </div>
                 <div class="product-desc">
-                    <h2 style={{}}> {props.product.name}</h2>
+                    <h4 style={{}}> {props.product.name}</h4>
                     <p style={{width:"100%"}}>{props.product.description}</p>
                     <p>${props.product.price}</p>
                     <div> 
