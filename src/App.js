@@ -59,8 +59,21 @@ function App() {
   return (
     <div className="App"> 
     
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          {Cart({
+            removeFromCart: removeFromCart,
+            clearCart: clearCart,
+            cartItems: cartItems,
+            priceTotal: priceTotal
+            }) }
+          <a class="close" href="#">&times;</a>
+    
+        </div>
+      </div>
+
     <div style={{display:'flex',justifyContent: 'flex-end', margin: '30px 30px -30px'}}>
-        <Button sx= {{color:"#999933", borderRadius:"0px"}} style={{}} >
+        <Button sx= {{color:"black", borderRadius:"0px"}} style={{color:"black"}}  href="#popup1">
           
           <ShoppingCartIconSharp/>
           {cartSum}

@@ -96,7 +96,7 @@ const products =
     },
     {
     "name": "Raccoon",
-    "description": "Call him a thief if you want, but he prefers to think of himself as a Robinhood of the dumpster",
+    "description": "You can call him a thief, but he prefers to think of himself as Robinhood of the Dumpster",
     "price": 235.56,
     "diet": "Omnivore",
     "legs": "4",
@@ -114,7 +114,7 @@ const products =
     },
     {
     "name": "Zebra",
-    "description": "The stripes are his everyday outfit. Please stop calling it a costume",
+    "description": "The stripes are his everyday outfit. Please stop calling it a costume. Please.",
     "price": 899.99,
     "diet": "Herbivore",
     "legs": "4",
