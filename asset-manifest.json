@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Development/static/css/main.95fc0338.css",
-    "main.js": "/Development/static/js/main.dd6dcfee.js",
-    "static/media/baboon.jpeg": "/Development/static/media/baboon.71fe8f0489c75b276bc9.jpeg",
-    "static/media/buffalo.jpeg": "/Development/static/media/buffalo.21cc202fd0eebb819f93.jpeg",
-    "static/media/octapus.jpeg": "/Development/static/media/octapus.82520187de0727a2b62f.jpeg",
-    "static/media/raccoon.jpeg": "/Development/static/media/raccoon.97e6937a369689994387.jpeg",
-    "static/media/zebra.jpeg": "/Development/static/media/zebra.eab04c012b2e0361cc96.jpeg",
-    "static/media/duck.jpeg": "/Development/static/media/duck.d62df1e93c794610547e.jpeg",
-    "static/media/rhino.jpeg": "/Development/static/media/rhino.93c8f14ebabbbf896367.jpeg",
-    "static/media/elephant.jpeg": "/Development/static/media/elephant.ebb83f99ead91a095f28.jpeg",
-    "static/media/polar_bear.jpeg": "/Development/static/media/polar_bear.52ddf02c297b62e12402.jpeg",
-    "static/media/leopard.jpeg": "/Development/static/media/leopard.4e26a52ec768c54bfb00.jpeg",
-    "static/media/lemur.jpeg": "/Development/static/media/lemur.b51ce61a71cb78f211fe.jpeg",
-    "static/media/chicken.jpeg": "/Development/static/media/chicken.7ac1e631b1dc8088e4be.jpeg",
+    "main.css": "/Development/static/css/main.72a55767.css",
+    "main.js": "/Development/static/js/main.6b4a36c1.js",
+    "static/media/baboon.jpg": "/Development/static/media/baboon.1b39f6b7619e97308a9b.jpg",
+    "static/media/octapus.jpg": "/Development/static/media/octapus.78d7d128b46162ef0ff6.jpg",
+    "static/media/buffalo.jpg": "/Development/static/media/buffalo.dd36c341c23be7795f73.jpg",
+    "static/media/rhino.jpg": "/Development/static/media/rhino.874222d8c4cd74a06d7d.jpg",
+    "static/media/raccoon.jpg": "/Development/static/media/raccoon.6ae38e3061d9f491f846.jpg",
+    "static/media/chicken.jpg": "/Development/static/media/chicken.aba788df922c8d4b6b23.jpg",
+    "static/media/elephant.jpg": "/Development/static/media/elephant.d2f0b291c5ce458ccae3.jpg",
+    "static/media/leopard.jpg": "/Development/static/media/leopard.5caceeb7b577a85b86c2.jpg",
+    "static/media/polar_bear.jpg": "/Development/static/media/polar_bear.4cf4366f4d38f6f489da.jpg",
+    "static/media/zebra.jpg": "/Development/static/media/zebra.7cbf49aa8c10cdf982cb.jpg",
+    "static/media/lemur.jpg": "/Development/static/media/lemur.26c545d92d0e56045a70.jpg",
+    "static/media/duck.jpg": "/Development/static/media/duck.ec38c0e62d11c6956588.jpg",
     "static/media/antizoostack.svg": "/Development/static/media/antizoostack.8e59aa20db684e7cbb9e4d9015f5b571.svg",
     "static/media/logo.svg": "/Development/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Development/index.html",
-    "main.95fc0338.css.map": "/Development/static/css/main.95fc0338.css.map",
-    "main.dd6dcfee.js.map": "/Development/static/js/main.dd6dcfee.js.map"
+    "main.72a55767.css.map": "/Development/static/css/main.72a55767.css.map",
+    "main.6b4a36c1.js.map": "/Development/static/js/main.6b4a36c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.95fc0338.css",
-    "static/js/main.dd6dcfee.js"
+    "static/css/main.72a55767.css",
+    "static/js/main.6b4a36c1.js"
   ]
 }
